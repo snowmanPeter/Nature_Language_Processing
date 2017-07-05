@@ -36,7 +36,7 @@ class SNS():
             word = word.append(rst / len(arr))
             for kk in xrange(i-1):
                 result = result + list(rst[np.array(list(map(lambda ss:rst[ss]/word[ss[kk]]/word[ss[kk+1:]],rst.index))) >= self.fixed].index)
-        print "词频统计结束"
+        print "词频统计结束,"
         return result
 
     def getResult(self,rst):
